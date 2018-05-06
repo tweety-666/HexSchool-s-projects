@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <title>Document</title>
+
+    <style>
+        a,btn,p,h2,h3,h5{
+            font-family: Microsoft JhengHei;
+        }
+        .header-carousel-item{
+            height: 450px;
+        }
+        .bg-cover{
+            background-size: cover;
+            background-position: center center;
+        }
+        .carousel-caption{
+            background-color: rgba(0, 0,0,.6)
+        }
+        @media (min-width: 768px) {
+            .text-md-dark{
+                color: #000;
+            }
+            
+            }
+
+        @media (max-width: 767px) {
+         .text-bg{
+             border-radius: 10px;
+             background-color: rgba(0, 0,0,.7)
+             
+             }
+        .text-md-white{
+                color: white;
+                border-radius: 10px;
+                background-color: rgba(0, 0,0,.7)
+            }   
+         }
+
+         
+         
+
+    </style>
+</head>
+<body>
+
+<div class="bg-secondary py-1">
+    <div class="container text-right">
+        <a href="#" class="text-white mr-1"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-twitter-square"></i></a>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="C:\Users\user\Desktop\B4\logo_w.svg" alt="" width="120px" height="28px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">首頁
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">美味菜單</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <a href="@" class="btn btn-primary mr-2 " data-toggle="modal" data-target="#loginModal">登入</a>
+                <a href="@" class="btn btn-primary " data-toggle="modal" data-target="#registerModal">註冊</a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="header">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active header-carousel-item bg-cover" style="background-image:url(https://images.unsplash.com/photo-1492683513054-55277abccd99?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+                <div class="carousel-caption px-3 d-none d-md-block">
+                    <h5>一個人，田野間的輕鬆美味</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, voluptas atque iste harum labore fugiat beatae iure nostrum aperiam nisi nesciunt quibusdam explicabo hic, rem temporibus amet vero repudiandae dolor.</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover" style="background-image:url(https://images.unsplash.com/photo-1497668512640-fcbd959e5338?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=)">
+                <div class="carousel-caption px-3 d-none d-md-block">
+                    <h5>一個人，田野間的輕鬆美味</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, voluptas atque iste harum labore fugiat beatae iure nostrum
+                        aperiam nisi nesciunt quibusdam explicabo hic, rem temporibus amet vero repudiandae dolor.</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover" style="background-image:url(https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=2&auto=format&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb&crop=)">
+                <div class="carousel-caption px-3 d-none d-md-block">
+                    <h5>一個人，田野間的輕鬆美味</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, voluptas atque iste harum labore fugiat beatae iure nostrum
+                        aperiam nisi nesciunt quibusdam explicabo hic, rem temporibus amet vero repudiandae dolor.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<section class="bg-info">
+    <div class="container py-5 text-white" >
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-2">
+                    <i class="fas fa-utensils fa-5x"></i>
+                </div>
+                <h3>每天都要吃早餐</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim quos culpa cupiditate inventore, porro eos
+                    rem excepturi at voluptate eius commodi ea ipsa odio optio nemo harum ad! Ad.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-2">
+                    <i class="fas fa-utensils fa-5x"></i>
+                </div>
+                <h3>每天都要吃午餐</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim quos culpa cupiditate inventore, porro eos
+                    rem excepturi at voluptate eius commodi ea ipsa odio optio nemo harum ad! Ad.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-2">
+                    <i class="fas fa-utensils fa-5x"></i>
+                </div>
+                <h3>每天都要吃晚餐</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim quos culpa cupiditate inventore, porro eos
+                    rem excepturi at voluptate eius commodi ea ipsa odio optio nemo harum ad! Ad.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid py-5 bg-light text-white" style="position: relative">
+        <div class="row">
+            <div class="col-md-5 bg-cover" 
+            style="position:absolute; top:0; bottom:0;
+            background-image:url(https://images.unsplash.com/photo-1481185103603-1dc844ef51db?dpr=2&auto=format&fit=crop&w=1080&h=718&q=80&cs=tinysrgb&crop=)">
+            </div>
+        </div>
+   
+
+        <div class="container">
+            <div class="row justify-content-end text-md-dark">
+                <div class="col-md-7 text-bg">
+                    <h3>歡迎來吃三餐</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam neque mollitia exercitationem beatae porro nihil accusamus quibusdam, ab officiis, ipsam, soluta ducimus. At veniam maxime laborum illum laboriosam delectus. In.</p>
+                    <a href="" class="btn btn-info my-2">查看更多</a>
+                
+                    <div class="row mt-4">
+                        <div class="col-md-6 ">
+                            <h3>歡迎來吃三餐</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam neque mollitia exercitationem beatae porro nihil
+                                accusamus quibusdam, ab officiis, ipsam, soluta ducimus. At veniam maxime laborum illum laboriosam delectus.
+                                In.</p>
+                        </div>
+                        <div class="col-md-6 ">
+                            <h3>歡迎來吃三餐</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam neque mollitia exercitationem beatae porro nihil
+                                accusamus quibusdam, ab officiis, ipsam, soluta ducimus. At veniam maxime laborum illum laboriosam delectus.
+                                In.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">如何這麼好吃</h2>
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <div class="d-flex mr-3">
+                    <div><i class="fas fa-leaf fa-4x mr-3"></i></div>
+                    <div>
+                        <h3>如何這麼好吃</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim illo impedit quod, quidem, cupiditate, eaque placeat unde excepturi numquam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <div class="d-flex mr-3">
+                    <div><i class="fas fa-leaf fa-4x mr-3"></i></div>
+                    <div>
+                        <h3>如何這麼好吃</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim illo impedit quod, quidem, cupiditate, eaque
+                            placeat unde excepturi numquam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <div class="d-flex mr-3">
+                    <div>
+                        <i class="fas fa-leaf fa-4x mr-3"></i>
+                    </div>
+                    <div>
+                        <h3>如何這麼好吃</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim illo impedit quod, quidem, cupiditate,
+                            eaque placeat unde excepturi numquam.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-3">
+                <div class="d-flex mr-3">
+                    <div>
+                        <i class="fas fa-leaf fa-4x mr-3"></i>
+                    </div>
+                    <div>
+                        <h3>如何這麼好吃</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus enim illo impedit quod, quidem, cupiditate,
+                            eaque placeat unde excepturi numquam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<div class="container-fluid px-4 bg-light" style="position: relative">
+
+    <div class="row">
+        <div class="col-md-5 bg-cover" style="position:absolute; top:0; bottom:0;right:0;
+                background-image:url(https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=)">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="px-2 py-3 text-md-white">
+                    <h3>每天都要吃好吃的</h3>
+                    <p>Lorem ipsum dolor sit auntur perspiciatis magni consequatur! Sit veniam illo aperiam aliquam.</p>
+                    <dl class="row py-2">
+                        <dt class="col-sm-3 py-1">不吃飽哪有力氣減肥啊？</dt>
+                        <dd class="col-sm-9 py-1">邊，是貝德花芬是槐格納你就愛，再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你。</dd>
+            
+                        <dt class="col-sm-3 py-1">愛你，愛你，我們真的羡慕</dt>
+                        <dd class="col-sm-9 py-1">錢立地就成富豪勢力家，他叩了不少下頭，和別的其餘的一日，是怎樣生竟不如其死？我，愛你，愛你，我們真的羡慕，我猜想，卻沒有同樣的碎痕，雪西裡與普陀山，沒福見著你的父親，想中止也不可能。</dd>
+            
+                        <dt class="col-sm-3 py-1">我再來歐洲你已經早</dt>
+                        <dd class="col-sm-9 py-1">這才覺著父性的愛像泉眼似的在性靈裏汩汩的流出：只可惜是遲了，講給我聽你得小提琴的故事：怎樣那晚上買琴來的時候你已經在你的小床上睡好。</dd>
+            
+                        <dt class="col-sm-3 py-1">假如你單是站著看還不滿意時</dt>
+                        <dd class="col-sm-9 py-1">這時候想回頭已經太遲，只是這無恩的長路，還是有人成心種著的？</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.703589219459!2d121.48780071500727!3d25.078033683951855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a929fd270f0d%3A0xe03f2a1b190438c8!2z5ryB55S35ZKM6aOf5ryB5aSr5paZ55CG!5e0!3m2!1szh-TW!2stw!4v1522132922568"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="col-md-6">
+                <form action="#" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="username">姓名*</label>
+                        <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel">電話*</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="請輸入電話" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" class="form-control" id="email" placeholder="請輸入信箱" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">人數*</label>
+                        <input type="number" class="form-control" id="number" placeholder="請輸入人數" required>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">需要素食</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2">不需要素食</label>
+                    </div>
+                    
+                    <div class="mt-2 text-right">
+                        <button type="button" class="btn btn-secondary mr-2">取消</button>
+                        <button type="submit" class="btn btn-primary">送出</button>
+                    </div>
+                </form>
+                
+                <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function () {
+                        'use strict';
+                        window.addEventListener('load', function () {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('needs-validation');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                form.addEventListener('submit', function (event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+                <div class="row">
+                    <div class="col-md-9 text-white p-3">
+                        <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+                        <p>短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
+                        <a href="#" class="btn btn-warning">加入我們</a>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="col-md-6 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)">
+                <div class="row">
+                    <div class="col-md-9 text-white p-3">
+                        <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+                        <p>短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
+                        <a href="#" class="btn btn-warning">品嘗佳餚</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="footer bg-light">
+        <ul class="list-inline p-3 pl-5">
+           <li class="list-inline-item text-secondary">© Copright 2017 六角學院</li>
+            <li class="list-inline-item">
+                <a href="#">GitHub</a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">Facebook</a>
+            </li>
+           <li class="list-inline-item">
+                <a href="#">About</a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+               
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">帳號</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">我們不會揭露您的資訊</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">密碼</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">記住我</label>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <a href="@" class="mr-auto" data-dismiss="modal"  data-toggle="modal" data-target="#registerModal">還不是會員?點我註冊吧!</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary">登入</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>註冊守則</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, illum aut maxime temporibus cupiditate, sed quasi, debitis libero quia nesciunt quisquam error harum laboriosam quam illo culpa voluptas! Non, sunt.</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">帳號</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">請勿用重要資訊當帳號</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">密碼</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">我同意註冊守則</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="@" class="mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">切換到登入</a>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary">註冊</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('a[data-dismiss="modal"][data-toggle="modal"]').on("click",function() {
+            var target = $(this).data("target");
+            $(target).on( 'shown.bs.modal', function() {
+                $('body').addClass("modal-open")
+            })
+        })
+    })
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+</html>
