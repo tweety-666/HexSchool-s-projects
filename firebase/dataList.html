@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="select">請選擇排序方式</label>
+    <select name="" id="select">選擇排序方式
+        <option value="age">依年齡排序</option>
+        <option value="weight">依體重排序</option>
+        <option value="height">依身高排序</option>
+    </select>
+    <button id="reverse">把順序反轉</button>
+    <ul id="list">
+
+    </ul>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBUvQ1l_UvY2tte1BsMnmT6dtvMV0_btCM",
+            authDomain: "datalist-ce8cd.firebaseapp.com",
+            databaseURL: "https://datalist-ce8cd.firebaseio.com",
+            projectId: "datalist-ce8cd",
+            storageBucket: "datalist-ce8cd.appspot.com",
+            messagingSenderId: "347347023730"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="dataList.js"></script>
+</body>
+</html>

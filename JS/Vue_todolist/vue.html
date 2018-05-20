@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vue.css">
+    <title>To-do list</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+           <label for="todoList" style="color: deepskyblue">輸入代辦事項:</label>
+           <input type="text" id="todoList" placeholder="請輸入代辦事項" @keyup.enter="addTodo(newTodo)" v-model="newTodo">
+           <button @click="addTodo(newTodo)" class="addButton">新增</button>
+        </div>
+
+        <hr>
+
+        <h1>代辦事項</h1><button class="allDone" @click="allDone(todo)">全部完成</button>
+        
+        <span class="show">
+            <label for="show" style="color: deepskyblue">顯示:</label>
+            <select id="show" v-model="show">
+                <option value="0">全部</option>
+                <option value="1">已完成</option>
+                <option value="2">未完成</option>
+            </select>
+        </span>
+
+        
+        <div>
+            <ul>
+                <li v-for="todo in todos" v-bind:class="{active:todo.done}" v-if="show==0 || show==1 && todo.done==true || show==2 && todo.done==false">
+                    <input type="checkbox" v-model="todo.done"> {{todo.content}} 
+                    <button  class="delete" @click="removeTodo(todo)">刪除</button>
+                </li>
+            </ul>
+        </div>
+        
+
+    </div>
+<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+<script src="vue.js"></script>
+</body>
+</html>

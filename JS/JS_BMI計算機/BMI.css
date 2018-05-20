@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: Microsoft JhengHei;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset css end */
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/* 以下是計算BMI的區域*/
+.header{
+    background-color: #424242;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+.clearfix{
+    overflow: auto;
+    zoom: 1; 
+}
+.logo{
+    float: left;
+    margin: 30px;
+}
+.BMI{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin:50px;
+}
+.BMI label{
+    color:#FFD366;
+    margin:10px;
+    font-size:20px;
+}
+.BMI input{
+    font-size:20px;
+    color: white;
+    text-indent: 10px; 
+}
+#height::-webkit-input-placeholder,#weight::-webkit-input-placeholder {
+    color: white;
+    text-indent: 10px;
+    font-family: Microsoft JhengHei;
+}
+#height::-webkit-input-placeholder,#weight:-moz-placeholder {  
+    color: white;
+    text-indent: 10px;
+    font-family: Microsoft JhengHei;
+}
+#height::-webkit-input-placeholder,#weight::-moz-placeholder {  
+    color: white;
+    text-indent: 10px;
+    font-family: Microsoft JhengHei;
+}
+#height::-webkit-input-placeholder,#weight:-ms-input-placeholder {  
+    color: white;
+    text-indent: 10px;
+    font-family: Microsoft JhengHei;
+}
+#height , #weight{
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.button{
+    background-color:#FFD366;
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    margin:20px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+}
+
+/* 以下是按鈕變化的區域 */
+.blue {
+  position: relative;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #424242;
+  border: 6px solid #31BAF9;
+}
+.blue .circular {
+  position: absolute;
+  left: 80px;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #31BAF9;
+}
+.blue .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #31BAF9;
+  line-height: 21px;
+}
+.blue .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #31BAF9;
+}
+
+
+.green {
+  position: relative;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #424242;
+  border: 6px solid #86D73F;
+}
+.green .circular {
+  position: absolute;
+  left: 80px;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #86D73F;
+}
+.green .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #86D73F;
+  line-height: 21px;
+}
+.green .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #86D73F;
+}
+
+
+.orange1 {
+  position: relative;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #424242;
+  border: 6px solid #FF982D;
+}
+.orange1 .circular {
+  position: absolute;
+  left: 80px;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FF982D;
+}
+.orange1 .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #FF982D;
+  line-height: 21px;
+}
+.orange1 .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #FF982D;
+}
+
+
+.orange2 {
+  position: relative;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #424242;
+  border: 6px solid #FF6C02;
+}
+.orange2 .circular {
+  position: absolute;
+  left: 80px;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FF6C02;
+}
+.orange2 .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #FF6C02;
+  line-height: 21px;
+}
+.orange2 .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #FF6C02;
+}
+
+
+.red {
+  position: relative;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  background-color: #424242;
+  border: 6px solid #FF1200;
+}
+.red .circular {
+  position: absolute;
+  left: 80px;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #424242;
+  border-radius: 50%;
+  background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FF1200;
+}
+.red .value {
+  margin-top: 5px;
+  font-family: AppleSystemUIFont;
+  font-size: 32px;
+  color: #FF1200;
+  line-height: 21px;
+}
+.red .bmi {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #FF1200;
+}
+
+/* 以下是記錄BMI的區域 */
+.content{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    letter-spacing: 2px;
+}
+.list{
+    margin: 0 auto;
+    width: 624px;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list li{
+    border-left:solid 7px none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    width: auto;
+    height: 62px;
+    background: white;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.2);
+}
+
+.list .status {
+  font-size: 20px;
+  color: #4A4A4A;
+}
+.list .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list .box .bmiName {
+  margin-right: 7px;
+  font-size: 12px;
+  color: #424242;
+}
+.list .box .value {
+  margin-right: 7px;
+  font-size: 22px;
+  color: #424242;
+}
+.list .data {
+  font-size: 12px;
+  color: #424242;
+}
+.list img {
+  width: 25px;
+}
+
+
+/* 以下是footer的區域 */
+.footer{
+    margin-top: 50px;
+    background-color: #FFD366;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer img{
+    margin: 10px;
+}

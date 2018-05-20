@@ -1,0 +1,440 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: Microsoft JhengHei; 
+	line-height: 1;
+}
+a:hover{
+	cursor: pointer;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* CSS reset ends */
+
+.wrap{
+	margin: 0 auto;
+	width: 1000px;
+	
+}
+
+/*以下是灰色bar*/
+
+.follow{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #f6f6f6;
+	height: 30px;
+	
+}
+.follow ul li{
+	display: block;
+	float: right;
+	margin-right: 15px;
+	
+}
+.follow ul li img{
+	margin-right: 4px;
+	float: left;
+	
+}
+.follow ul li a{
+	/* font-family: Microsoft JhengHei; */
+	font-size: 14px;
+	text-decoration:none;
+	margin-top: 7px;
+	float: left;
+}
+.twitterWord{
+	color: #67c0ef;
+}
+.fbWord{
+	color: #4460a0;
+	padding-right: 15px;
+	border-right: 2px solid #cccccc;
+}
+
+
+/*以下是header*/
+
+.header h1 a{
+	width: 182px;
+	height: 36px;
+	background-image: url(images/logo.png);
+	text-indent:101%;
+    overflow: hidden;
+	white-space: nowrap;
+	float: left;
+	
+}
+.header ul{
+	float: right;
+}
+.header ul li{
+	float: left;
+	margin-right: 20px;
+}
+.header ul li a{
+	display: block;
+	padding: 10px 10px;
+	margin: 2px 5px;
+	color: #00cc99;	
+	text-decoration: none;
+	font-size: 18px;
+}
+.header ul li a:hover{
+	border-bottom: 3px  #00cc99 solid;
+}
+
+
+/* 這裡有問題 */
+@media (max-width: 768px){
+	.header h1 a{
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-bottom: 2px;
+	}
+	.header ul{
+		width: 100%;
+	}
+
+	.header ul li{
+		width: 50%;
+    	margin: 3px 0px;  /* 尤其是這裡，拿掉就變成每個li一個個往下排*/
+    	text-align: center;
+	}
+	.header ul li a{
+		float: none;
+		text-align: center;
+		
+	}
+	.header ul li a:hover{
+		border: none;
+		background-color: #00cc99;
+		color: #fff;
+	}
+}
+
+
+.slide_li{
+	position: relative;
+}
+.slidedown{
+	display: none;
+	z-index: 99; 
+	position: absolute; 
+	top: 38px;
+	left: 0px;
+	
+}
+.header ul li:hover .slidedown{
+	display: block;
+	
+}
+.slidedown li{
+	width: 103px;
+	background: white;
+
+}
+.slidedown li a{
+	text-align: center;
+	font-size: 16px;
+	text-decoration: none;
+	color: #00cc99;
+}
+.slidedown li:hover a{
+	color: white;
+	background: #00cc99;
+	border-radius: 2px;
+}
+
+/*以下是大圖，不知道怎樣變RWD*/
+.banner{
+	float: left;
+	max-width: 100%;
+	height: auto;
+}
+.banner img{
+	float: left;
+	max-width: 100%;
+	margin-bottom: 50px;
+	z-index: 1;
+}
+
+/*以下是三區塊介紹*/
+.classList{
+	
+	
+}
+.classList li{
+	float: left;
+	width: 31%;
+	height: 380px;
+	border: 1px solid #cccccc;
+	box-shadow: 0 3px 10px gray;
+	margin:0 1% 50px 1%;
+}
+
+.classList span{
+	width: 100%;
+	height: 150px;
+	float: left;
+}
+
+.classList li img{
+	margin:10px auto 0 auto;
+	display: block;
+	
+}
+
+#RWD{
+	margin-top: 40px;
+}
+
+#jquery{
+	margin-top: 20px;
+}
+
+.classList li h2{
+	width: 100%;
+	float: left;
+	margin: 25px auto ;
+	font-size: 22px;
+	color: black;
+	text-align:center;
+	font-weight:bold;
+	text-shadow:1px 1px 3px gray;
+	letter-spacing: 2px;
+}
+
+.classList li p{
+	float: left;
+	margin: 20px 15px 5px 15px;
+	color: #000;
+	letter-spacing: 2px;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/*以下是表格*/
+.classTable {
+	float: left;
+	margin: 0 auto;
+}
+.classTable h3{
+	text-align: center;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+.classTable table{
+	margin: 0 80px 80px 80px; /*這邊怎樣置中呢*/
+}
+
+.th{
+	background-color: #e3e3e3;
+	font-weight: bolder;
+}
+
+.classTable td{
+	width: 22%;
+	height: 20px;
+	font-size: 18px;
+	border-top: dimgray 1px solid;
+	border-bottom:  dimgray 1px solid;
+	padding: 10px 0 10px 8px;
+	border-color:#e8e7e7; 
+}
+.highlight{
+	color: #42b392;
+}
+
+/*以下是資料表單*/
+.form{
+	float: left;
+	width: 100%;
+	height: 450px;
+	background:linear-gradient(#00644c,#009772);
+	position:relative;
+}
+
+.form h4{
+	color:white;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 26px;
+	line-height: 32px;
+	margin: 25px 0 25px 0;
+	letter-spacing:2px;
+	
+}
+
+.form textarea{
+	float: left;
+	margin-top: 20px;
+	margin-left: 40px;
+	border-radius: 5px;
+}
+
+.input{
+	margin-top: 20px;
+	height: 300px;
+	width: 400px;
+	float: left;
+	margin-left:50px;
+}
+
+.input label{
+	color: white;
+	font-size: 18px;
+	font-weight: bolder;
+	letter-spacing:2px;
+	padding-bottom: 3px;
+}
+#name {
+	margin: 3px 0px 20px 3px;
+	width: 400px;
+	height: 32px;
+	border: none;
+	border-radius:2px;
+	font-size: 24px;
+}
+
+#tel{
+	margin: 3px 0px 20px 3px;
+	width: 400px;
+	height: 32px;
+	border: none;
+	border-radius:2px; 
+	font-size: 24px;
+}
+
+#mail{
+	margin: 3px 0px 0px 3px;
+	width: 400px;
+	height: 32px;
+	border: none;
+	border-radius:2px;
+	font-size: 24px;
+}
+#submit{
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;
+	letter-spacing:2px;
+	position: absolute;
+	right: 50px;
+	bottom: 40px;
+	background-color: #00cc99;
+	border-radius: 5px;
+	border: none;
+	padding: 5px 20px 5px 20px;
+}
+
+/*以下是footer*/
+.footer{
+	
+	height: 300px;
+}
+.footer img{
+	float: left;
+}
+.footer a{
+	float: left;
+	color: #9d9d9d;
+	text-decoration: none;
+	font-size: 36px;
+	font-weight: bolder;
+	padding: 5px;
+	margin: 30px 0 50px 15px;
+}
+
+.contact{
+	float: right;
+}
+
+.contact a{
+	margin: 15px 5px 5px 0;
+}
+
+.contact  span1{
+	font-size: 20px;
+	color: #666666;
+	font-weight: bolder;
+}
+
+.contact  span2{
+	color: #e12d80;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.contact p{
+	margin:0px 0px 5px 5px;
+}
+
+/* 回到最上方的按鈕 */
+#top{
+	-webkit-writing-mode: vertical-lr;
+	writing-mode: vertical-lr ;
+	color:white;
+	background: grey;
+	padding: 10px;
+	letter-spacing: -10px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	border-radius: 3px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	border: none;
+	text-decoration: none;
+}
