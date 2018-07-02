@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>todo-list</title>
+</head>
+<body>
+    <link rel="stylesheet" href="F2E-week1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous" />
+    <title>sixweek1</title>
+    <div id="app">
+        <div class="nav container-fluid d-flex justify-content-center">
+            <div class="navbar d-flex">
+                <div class="mytasks w220">
+                    <a href="#">My Tasks</a>
+                </div>
+                <div class="progres w220">
+                    <a href="#">In progress</a>
+                </div>
+                <div class="completed w220">
+                    <a href="#">Completed</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="list" style="border:none;">
+                <div class="checkbar d-flex">
+                    <div class="checkbox align-self-center"> </div>
+                    <div class="content d-flex align-self-center mr-auto">Type Something Here ... </div>
+                    <div class="star d-flex align-self-center">
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="edit d-flex align-self-center">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+                <div class="date">
+                    <div>
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Deadline</span>
+                    </div>
+                    <div>
+                        <input id="year" type="text" placeholder="yyyy/mm/dd" />
+                        <input id="hour" type="text" placeholder="hh:mm" />
+                    </div>
+                    <div>
+                        <i class="far fa-file"></i>
+                        <span>File</span>
+                        <button>+</button>
+                    </div>
+                    <div>
+                        <i class="far fa-comment-dots"></i>
+                        <span>Comment</span>
+                        <textarea id="comment" type="textarea" placeholder="Type your memo here .."></textarea>
+                    </div>
+                </div>
+                <div class="button d-flex">
+                    <button id="cancel">
+                        <i class="fas fa-times"></i>
+                        <span>Cancel</span>
+                    </button>
+                    <button id="addTask">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Task</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="list2">
+                <div class="checkbar d-flex">
+                    <div class="checkbox align-self-center"> </div>
+                    <div class="content d-flex align-self-center mr-auto">Type Something Here ... </div>
+                    <div class="star d-flex align-self-center">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="edit d-flex align-self-center">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="far fa-calendar-alt"></i>
+                    <span>5/14</span>
+                    <i class="far fa-file"></i>
+                    <i class="far fa-comment-dots"></i>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="list2" style="margin-top:8px !important;">
+                <div class="checkbar d-flex">
+                    <div class="checkbox align-self-center"> </div>
+                    <div class="content d-flex align-self-center mr-auto">Type Something Here ... </div>
+                    <div class="star d-flex align-self-center">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="edit d-flex align-self-center">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="far fa-file" style="margin-left:72px;"></i>
+                    <i class="far fa-comment-dots"></i>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="list2" style="margin-top:8px !important;background:#F2F2F2;">
+                <div class="checkbar d-flex">
+                    <div class="checkbox align-self-center"> </div>
+                    <div class="content d-flex align-self-center mr-auto">Type Something Here ... </div>
+                    <div class="star d-flex align-self-center">
+                        <i class="far fa-star" style="color:black;"></i>
+                    </div>
+                    <div class="edit d-flex align-self-center">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="far fa-calendar-alt" style="margin-left:72px;"></i>
+                    <span>2019/6/18</span>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="list2" style="margin-top:8px !important;background:#F2F2F2;">
+                <div class="checkbar d-flex">
+                    <div class="checkbox align-self-center"> </div>
+                    <div class="content d-flex align-self-center mr-auto">Type Something Here ... </div>
+                    <div class="star d-flex align-self-center">
+                        <i class="far fa-star" style="color:black;"></i>
+                    </div>
+                    <div class="edit d-flex align-self-center">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="far fa-file" style="margin-left:72px;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="list2" style="margin-top:8px !important;background:#F2F2F2;">
+                <div class="checkbar d-flex">
+                    <div class="checkbox align-self-center" style="background:#4A90E2;">
+                        <i class="fas fa-check" style="font-size:14px;color:#fff;padding-left:5px;"></i>
+                    </div>
+                    <div class="content d-flex align-self-center mr-auto">
+                        <strike style="color:#9B9B9B;">Type Something Here ... </strike>
+                    </div>
+                    <div class="star d-flex align-self-center">
+                        <i class="far fa-star" style="color:black;"></i>
+                    </div>
+                    <div class="edit d-flex align-self-center">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="far fa-file" style="margin-left:72px;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="justify-content-start" style="width:620px;">
+                <p style="font-size:24px;color:#C8C8C8;padding-left:20px;margin-top:8px;">4 tasks left</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

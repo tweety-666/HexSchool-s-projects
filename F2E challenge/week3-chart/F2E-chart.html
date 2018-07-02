@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="F2E-chart.css">
+    <title>chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+</head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="#">Shoptime</a>
+                </h1>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="active">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">ORDER</a>
+                        </li>
+                        <li>
+                            <a href="#">PRODUCT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admin">
+                    <a href="#">ADMIN</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="overview">
+                <div class="container">
+                    <h2>overview</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="revenue">
+                                <h3>
+                                    <i class="fas fa-hand-holding-usd"></i>total revenue</h3>
+                                <p class="revenue-num">54,540</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="cost">
+                                <h3>
+                                    <i class="fas fa-toolbox"></i>total cost</h3>
+                                <p class="cost-num">12,660</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="income">
+                                <h3>
+                                    <i class="fas fa-money-bill"></i>net income</h3>
+                                <p class="income-num">41,880</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart">
+                <div class="container">
+                    <h3>activity</h3>
+                    <div class="chart-container">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="transaction-Website">
+                                <h2>transaction Website</h2>
+                                <ul>
+                                    <li>
+                                        <i class="fab fa-facebook-square"></i>
+                                        <p class="web">Facebook.com</p>
+                                        <p class="flow">45,836</p>
+                                        <div class="percentage percentage-up">
+                                            <i class="fas fa-arrow-up"></i>
+                                            <span>20%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-google"></i>
+                                        <p class="web">google.com</p>
+                                        <p class="flow">23,582</p>
+                                        <div class="percentage percentage-up">
+                                            <i class="fas fa-arrow-up"></i>
+                                            <span>12%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-amazon"></i>
+                                        <p class="web">amazon.com</p>
+                                        <p class="flow">2,489</p>
+                                        <div class="percentage percentage-down">
+                                            <i class="fas fa-arrow-down"></i>
+                                            <span>15%</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fab fa-wordpress-simple"></i>
+                                        <p class="web">Facebook.com</p>
+                                        <p class="flow">45,836</p>
+                                        <div class="percentage percentage-down">
+                                            <i class="fas fa-arrow-down"></i>
+                                            <span>30%</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="latest-order">
+                                <h2>Latest Orders</h2>
+                                <ul>
+                                    <li>
+                                        <img src="http://via.placeholder.com/100x100" alt="image">
+                                        <div class="order-info">
+                                            <h2 class="product-name">Vintage T-shirt</h2>
+                                            <div class="buy-date">
+                                                <span>2018/6/13 13:42</span>
+                                            </div>
+                                            <div class="buyer">
+                                                <span>Belle Willis</span>
+                                            </div>
+                                        </div>
+                                        <div class="total">
+                                            <h3>Total</h3>
+                                            <p class="dollar">3,200</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="http://via.placeholder.com/100x100" alt="image">
+                                        <div class="order-info">
+                                            <h2 class="product-name">wboy Jacket</h2>
+                                            <div class="buy-date">
+                                                <span>2018/6/13 10:45</span>
+                                            </div>
+                                            <div class="buyer">
+                                                <span>Adrian Cummings</span>
+                                            </div>
+                                        </div>
+                                        <div class="total">
+                                            <h3>Total</h3>
+                                            <p class="dollar">28,00</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img src="http://via.placeholder.com/100x100" alt="image">
+                                        <div class="order-info">
+                                            <h2 class="product-name">Coach Coat</h2>
+                                            <div class="buy-date">
+                                                <span>2018/6/13 8:26</span>
+                                            </div>
+                                            <div class="buyer">
+                                                <span>Lura Holland</span>
+                                            </div>
+                                        </div>
+                                        <div class="total">
+                                            <h3>Total</h3>
+                                            <p class="dollar">1,600</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="F2E-chart.js"></script>
+    </body>
+    </html>
+</body>
+</html>

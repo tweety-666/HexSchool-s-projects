@@ -1,0 +1,228 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #E1E1E1;
+  font-family: "Roboto-Medium";
+}
+
+.nav {
+  height: 76px;
+  width: 100%;
+  background: #4A90E2;
+}
+
+.navbar {
+  width: 660px;
+  justify-content: center;
+}
+.navbar .w220 {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+  color: #00408B;
+  width: 200px;
+}
+.navbar .w220 a {
+  color: #00408B;
+  text-decoration: none;
+}
+.navbar .w220 a:active, .navbar .w220 a:focus {
+  color: #fff;
+  border-bottom: 5px solid #00408B;
+  padding-bottom: 18px;
+}
+
+.list {
+  width: 620px;
+  height: 519px;
+  background: #F2F2F2;
+  margin-top: 22px;
+  border-radius: 5px;
+  box-shadow: 0 4px 14px #C8C8C8;
+}
+.list .checkbar {
+  height: 76px;
+  border-bottom: 2px solid #C8C8C8;
+}
+.list .checkbar .checkbox {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  margin-left: 32px;
+}
+.list .checkbar .checkbox:active, .list .checkbar .checkbox:focus {
+  background: #4A90E2;
+}
+.list .checkbar .content {
+  font-size: 24px;
+  color: #000;
+  margin-left: 16px;
+}
+.list .checkbar .star {
+  margin-right: 23px;
+}
+.list .checkbar .star .fa-star {
+  font-size: 24px;
+}
+.list .checkbar .edit {
+  margin-right: 32px;
+}
+.list .checkbar .edit .fa-pencil-alt {
+  font-size: 24px;
+  color: #4A90E2;
+}
+.list .date {
+  width: 620px;
+  height: auto;
+  margin-top: 26.6px;
+  margin-left: 72px;
+}
+.list .date div .fa-calendar-alt {
+  font-size: 18px;
+  color: #000;
+}
+.list .date div span {
+  margin-left: 9px;
+  font-size: 20px;
+  color: #000;
+}
+.list .date div #year, .list .date div #hour {
+  border: none;
+  margin-top: 8px;
+  width: 162px;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.list .date div #year::-webkit-input-placeholder, .list .date div #hour::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #C8C8C8;
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+.list .date div #hour {
+  margin-left: 8px;
+}
+.list .date div .fa-file {
+  margin-top: 30px;
+  font-size: 18px;
+}
+.list .date div button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #C8C8C8;
+  border-radius: 2px;
+  margin-top: 11px;
+  margin-left: 20px;
+  color: #fff;
+}
+.list .date div .fa-comment-dots {
+  margin-top: 27px;
+  font-size: 16px;
+}
+.list .date div #comment {
+  padding: 8px 16px;
+  background: #fff;
+  width: 445px;
+  height: 120px;
+  border-radius: 2px;
+  display: block;
+  border: none;
+  margin-left: 20px;
+}
+.list .date div #comment::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #C8C8C8;
+}
+.list .button {
+  width: 624px;
+  height: 60px;
+  margin-top: 24px;
+  padding: 0;
+}
+.list .button #cancel {
+  width: 50%;
+  height: 60px;
+  overflow: hidden;
+  background: #fff;
+  color: #D0021B;
+  font-size: 24px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  padding: 0;
+  margin-left: -2px;
+}
+.list .button #cancel .fa-times {
+  margin-right: 14px;
+}
+.list .button #addTask {
+  width: 50%;
+  height: 60px;
+  overflow: hidden;
+  background: #4A90E2;
+  color: #fff;
+  font-size: 24px;
+  border-bottom-right-radius: 5px;
+}
+.list .button #addTask .fa-plus {
+  margin-right: 16px;
+}
+
+.list2 {
+  width: 620px;
+  height: 102px;
+  background: #FFF2DC;
+  margin-top: 24px;
+  border-radius: 5px;
+}
+.list2 .checkbar {
+  margin-top: 24px;
+}
+.list2 .checkbar .checkbox {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  margin-left: 32px;
+}
+.list2 .checkbar .content {
+  font-size: 24px;
+  color: #000;
+  margin-left: 16px;
+}
+.list2 .checkbar .star {
+  margin-right: 23px;
+}
+.list2 .checkbar .star .fa-star {
+  font-size: 24px;
+  color: #F5A623;
+}
+.list2 .checkbar .edit {
+  margin-right: 32px;
+}
+.list2 .checkbar .edit .fa-pencil-alt {
+  font-size: 24px;
+  color: black;
+}
+.list2 div {
+  color: #757575;
+}
+.list2 div .fa-calendar-alt {
+  margin-left: 72px;
+  font-size: 16px;
+}
+.list2 div span {
+  margin-left: 8px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.list2 div .fa-file {
+  font-size: 16px;
+  margin-left: 16px;
+}
+.list2 div .fa-comment-dots {
+  font-size: 16px;
+  margin-left: 16px;
+}

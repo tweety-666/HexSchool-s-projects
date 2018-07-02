@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="filter.css">
+    <title>filter</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <button class="logo" id="homeBtn" title="首頁">
+                <img src="https://hexschool.github.io/THE_F2E_Design/week2-filter/assets/logo.png" alt="logo">
+            </button>
+            <div class="search">
+                <input type="text" class="subtitle white" placeholder="Explore your own activities">
+                <button id="fastSearchBtn" title="搜尋">
+                    <i class="fa fa-search fa-lg"></i>
+                </button>
+            </div>
+        </header>
+        <div class="container">
+            <section>
+                <div id="location" class="section">
+                    <div class="sectionBox">
+                        <h3>
+                            Location
+                            <button name="plus">
+                                <i class="fa fa-plus fa-2x detailInfo"></i>
+                            </button>
+                        </h3>
+                        <select class="singleSelect" name="language">
+                            <option value="">Choose option</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="date" class="section">
+                    <div class="sectionBox">
+                        <h3>
+                            Date
+                            <button name="plus">
+                                <i class="fa fa-plus fa-2x detailInfo"></i>
+                            </button>
+                        </h3>
+                        <div id="fromDate">
+                            from
+                            <input class="regular" type="date">
+                        </div>
+                        <div id="toDate">
+                            to &nbsp;&nbsp;&nbsp;
+                            <input class="regular" type="date">
+                        </div>
+                    </div>
+                </div>
+                <div id="categories" class="section">
+                    <div class="sectionBox">
+                        <h3>
+                            Categories
+                            <button name="plus">
+                                <i class="fa fa-plus fa-2x detailInfo"></i>
+                            </button>
+                        </h3>
+                        <select class="multipleSelect" multiple name="language"></select>
+                        <button id="searchBtn">搜尋</button>
+                    </div>
+                </div>
+            </section>
+            <section id="section2"></section>
+            <div class="pageArea">
+                <button id="pageStart" class="pageBtn subtitle">
+                    <i class="fa fa-angle-double-left" style="padding-left:8px;"></i>
+                </button>
+                <div></div>
+                <!--       <button id="pageEnd" class="pageBtn subtitle">
+            <i class="fa fa-angle-double-right" style="padding-left:8px;"></i>
+          </button> -->
+            </div>
+        </div>
+        <footer>
+            <div>
+                Practice of filters</div>
+        </footer>
+    </div>
+<script src="filter.js"></script>
+</body>
+</html>

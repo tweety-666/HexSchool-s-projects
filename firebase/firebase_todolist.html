@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>firebase</title>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="請輸入代辦事項">
+    <button id="send" type="button" value="submit">送出</button>
+    <ul id="list"></ul>
+
+   
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyClOdiuemcElYILnC1o8egcfsn6pTJX_WI",
+        authDomain: "todolist-6fab1.firebaseapp.com",
+        databaseURL: "https://todolist-6fab1.firebaseio.com",
+        projectId: "todolist-6fab1",
+        storageBucket: "todolist-6fab1.appspot.com",
+        messagingSenderId: "67083375582"
+    };
+    firebase.initializeApp(config);
+
+
+        
+        //DOM
+        var txt = document.getElementById("txt");
+        var send = document.getElementById("send");
+        var list = document.getElementById("list");
+        //todos
+        var todos = firebase.database().ref("todos");
+        //送出後，資訊傳到資料庫
+        send.addEventListener("click",function (e) {
+            console.log(txt.Value);
+            todos.push({content:txt.value});
+        })
+        //顯示內容
+        todos.on("value",function (snapshot) {
+            var str = "";
+            var data= snapshot.val();
+            for(var item in data){
+                console.log(item);
+                str+='<li data-key="'+ item +'">'+data[item].content+"</li>"
+            }
+            list.innerHTML=str;
+        })
+        //刪除內容
+        list.addEventListener("click",function (e) {
+            if(e.target.nodeName="LI"){
+                var key = e.target.dataset.key;
+                todos.child(key).remove();
+            }
+        })
+        
+
+    </script>
+</body>
+</html>
