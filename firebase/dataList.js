@@ -25,10 +25,6 @@ var data = {
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3ef535d5af0905662d70ae3998fd92a582f4d147
 //資料寫入firebase
 var datalist = firebase.database().ref("data");
 datalist.set(data);
@@ -40,7 +36,6 @@ var rev = document.getElementById("reverse");
 
 //選單改變，根據改變來排序data
 select.addEventListener('change', function (e) {
-<<<<<<< HEAD
     if (e.target.value !== '') {
         let sel = select.value;
         datalist.orderByChild(sel).once('value', function (snapshot) {
@@ -64,47 +59,6 @@ select.addEventListener('change', function (e) {
                 list.innerHTML = str;
             });
         });
-=======
-    // console.log(e.target.value);
-    if (e.target.value !== '') {
-        if (e.target.value == 'weight') {
-            select.orderByChild('weight').once('value', function (snapsnapshot) {
-                let weightshot = snapshot.val();
-                // console.log(weightsnapshotsnapshot);
-                let str = '';
-                snapshot.forEach(function (item) {
-                    itemValue = item.val()
-                    str += `<li>${item.key}:${itemValue.weight}</li>`;
-                    console.log(str);
-                    list.innerHTML = str;
-                });
-            });
-        } else if (e.target.value == 'age') {
-            select.orderByChild('age').once('value', function (snapshot) {
-                let agesnapshot = snapshot.val();
-                // console.log(agesnapshot);
-                let str = '';
-                snapshot.forEach(function (item) {
-                    itemValue = item.val();
-                    str += `<li>${item.key}:${itemValue.age}</li>`;
-                    console.log(str);
-                    list.innerHTML = str;
-                });
-            });
-        } else if (e.target.value == 'height') {
-            select.orderByChild('height').once('value', function (snapshot) {
-                let heightsnapshot = snapshot.val();
-                // console.log(heightsnapshot);
-                let str = '';
-                snapshot.forEach(function (item) {
-                    itemValue = item.val();
-                    str += `<li>${item.key}:${itemValue.height}</li>`;
-                    console.log(str);
-                    list.innerHTML = str;
-                });
-            });
-        }
->>>>>>> 3ef535d5af0905662d70ae3998fd92a582f4d147
     } else {
         list.innerHTML = `
                 <li>father</li>
@@ -116,7 +70,6 @@ select.addEventListener('change', function (e) {
 });
 
 //點擊反轉順序，把已選資料反轉
-<<<<<<< HEAD
 rev.addEventListener("click", function () {
     if (select.value == "weight") {
 
@@ -166,58 +119,3 @@ rev.addEventListener("click", function () {
 }
 
 );
-=======
-rev.addEventListener("click",function () {
-   if (select.value == "age") {
-       order.orderByChild('age').reverse().once('value', function (snapshot) {
-           let heightsnapshot = snapshot.val();
-           // console.log(heightsnapshot);
-           let str = '';
-           snapshot.forEach(function (item) {
-               itemValue = item.val();
-               str += `<li>${item.key}:${itemValue.height}</li>`;
-               console.log(str);
-               list.innerHTML = str;
-           });
-       });
-    
-   }
-
-   else if (select.value == "weight"){
-       order.orderByChild('weight').reverse().once('value', function (snapshot) {
-           let heightsnapshot = snapshot.val();
-           // console.log(heightsnapshot);
-           let str = '';
-           snapshot.forEach(function (item) {
-               itemValue = item.val();
-               str += `<li>${item.key}:${itemValue.height}</li>`;
-               console.log(str);
-               list.innerHTML = str;
-           });
-       });
-   }
-
-   else if (select.value == "height") {
-       order.orderByChild('height').reverse().once('value', function (snapshot) {
-           let heightsnapshot = snapshot.val();
-           // console.log(heightsnapshot);
-           let str = '';
-           snapshot.forEach(function (item) {
-               itemValue = item.val();
-               str += `<li>${item.key}:${itemValue.height}</li>`;
-               console.log(str);
-               list.innerHTML = str;
-           });
-       });
-   }
-   else{
-       list.innerHTML = `
-                <li>father</li>
-                <li>mother</li>
-                <li>son</li>
-                <li>daugher</li>
-            `;
-
-   }
-});
->>>>>>> 3ef535d5af0905662d70ae3998fd92a582f4d147
